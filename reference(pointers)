@@ -1,0 +1,19 @@
+#include <stdio.h>
+int swap(int *x,int *y)
+{int temp;
+temp=*x;
+*x=*y;
+*y=temp;
+return 0;
+}
+int main()
+{
+    int x,y;
+    printf("enter the numbers :");
+    scanf("%d",&x);
+    scanf("%d",&y);
+    printf("numbers before swap %d %d",x,y);
+swap(&x,&y);
+    printf("\nnumbers after swap %d %d",x,y);
+    return 0;
+}
